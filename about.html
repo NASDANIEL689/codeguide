@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CodeGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-code"></i>
+                CodeGuide
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#project-selection" class="nav-link dropdown-toggle">
+                            Project Types
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#project-selection" class="dropdown-item">All Projects</a></li>
+                            <li><a href="frontend.html" class="dropdown-item">Front-End Development</a></li>
+                            <li><a href="backend.html" class="dropdown-item">Back-End Development</a></li>
+                            <li><a href="mobile.html" class="dropdown-item">Mobile Development</a></li>
+                            <li><a href="game.html" class="dropdown-item">Game Development</a></li>
+                            <li><a href="data.html" class="dropdown-item">Data Science</a></li>
+                            <li><a href="ai.html" class="dropdown-item">AI & Machine Learning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- About Section -->
+            <section class="about-section">
+                <h1 class="about-title">About CodeGuide</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Mission</h2>
+                        <p>CodeGuide was created to help developers and aspiring programmers make informed decisions about which programming languages and technologies to learn and use for their projects. With so many options available today, choosing the right technology stack can be overwhelming.</p>
+                        
+                        <h2>What We Do</h2>
+                        <p>We provide clear, practical guidance based on:</p>
+                        <ul class="about-list">
+                            <li><strong>Project Type:</strong> Whether you're building a website, mobile app, game, or desktop application</li>
+                            <li><strong>Experience Level:</strong> From complete beginners to experienced developers</li>
+                            <li><strong>Career Goals:</strong> Job market demand and industry trends</li>
+                            <li><strong>Learning Curve:</strong> How quickly you can get started and become productive</li>
+                        </ul>
+                        
+                        <h2>Why CodeGuide?</h2>
+                        <p>Our recommendations are based on real-world experience and current industry standards. We focus on:</p>
+                        <ul class="about-list">
+                            <li>Practical, actionable advice</li>
+                            <li>Up-to-date information on the latest technologies</li>
+                            <li>Clear explanations for beginners</li>
+                            <li>Real company examples and use cases</li>
+                        </ul>
+                        
+                        <h2>Our Approach</h2>
+                        <p>Instead of overwhelming you with endless options, we guide you to the most suitable choices for your specific needs. We believe that the best programming language is the one that helps you achieve your goals efficiently.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <h2 class="contact-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>We'd Love to Hear from You</h3>
+                        <p>Have questions about programming languages or need help choosing the right technology for your project? We're here to help!</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>hello@codeguide.dev</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <h4>Feedback</h4>
+                                    <p>Share your thoughts and suggestions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>
+                                    <h4>Suggestions</h4>
+                                    <p>Help us improve our recommendations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h3>Send us a Message</h3>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Choose a topic</option>
+                                    <option value="general">General Question</option>
+                                    <option value="recommendation">Language Recommendation</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="suggestion">Suggestion</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or question..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CodeGuide. Helping developers choose the right tools.</p>
+        </div>
+    </footer>
+</body>
+</html> 

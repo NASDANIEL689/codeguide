@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CodeGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-code"></i>
+                CodeGuide
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#project-selection" class="nav-link dropdown-toggle">
+                            Project Types
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#project-selection" class="dropdown-item">All Projects</a></li>
+                            <li><a href="frontend.html" class="dropdown-item">Front-End Development</a></li>
+                            <li><a href="backend.html" class="dropdown-item">Back-End Development</a></li>
+                            <li><a href="mobile.html" class="dropdown-item">Mobile Development</a></li>
+                            <li><a href="game.html" class="dropdown-item">Game Development</a></li>
+                            <li><a href="data.html" class="dropdown-item">Data Science</a></li>
+                            <li><a href="ai.html" class="dropdown-item">AI & Machine Learning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="blog-section">
+                <h1 class="blog-title">Latest in Tech & AI</h1>
+                <p class="blog-subtitle">Stay updated with the latest coding news, AI developments, and job market trends</p>
+                
+                <div class="blog-grid">
+                    <!-- Featured Article -->
+                    <article class="blog-card featured">
+                        <div class="blog-card-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">AI & Jobs</span>
+                                <span class="blog-date">December 2024</span>
+                            </div>
+                            <h2 class="blog-card-title">AI Programming Assistants: The Future of Software Development</h2>
+                            <p class="blog-excerpt">GitHub Copilot, Amazon CodeWhisperer, and other AI coding assistants are revolutionizing how developers write code. Learn how these tools are changing the job market and what skills you need to stay competitive.</p>
+                            <div class="blog-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Programming</span>
+                                <span class="tag">Jobs</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Regular Articles -->
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Job Market</span>
+                                <span class="blog-date">December 2024</span>
+                            </div>
+                            <h3 class="blog-card-title">Top Programming Languages in Demand for 2025</h3>
+                            <p class="blog-excerpt">Python, JavaScript, and Rust are leading the charge. Discover which languages are most sought after by employers and why.</p>
+                            <div class="blog-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Rust</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Mobile Development</span>
+                                <span class="blog-date">December 2024</span>
+                            </div>
+                            <h3 class="blog-card-title">React Native vs Flutter: Which Should You Learn?</h3>
+                            <p class="blog-excerpt">Cross-platform mobile development is booming. Compare the two leading frameworks and decide which one fits your career goals.</p>
+                            <div class="blog-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Mobile</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Learning</span>
+                                <span class="blog-date">December 2024</span>
+                            </div>
+                            <h3 class="blog-card-title">The Rise of No-Code and Low-Code Platforms</h3>
+                            <p class="blog-excerpt">Traditional programming isn't the only path anymore. Explore how no-code tools are creating new opportunities for non-technical professionals.</p>
+                            <div class="blog-tags">
+                                <span class="tag">No-Code</span>
+                                <span class="tag">Low-Code</span>
+                                <span class="tag">Career</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Cybersecurity</span>
+                                <span class="blog-date">December 2024</span>
+                            </div>
+                            <h3 class="blog-card-title">Cybersecurity Skills Every Developer Should Know</h3>
+                            <p class="blog-excerpt">Security is no longer optional. Learn the essential cybersecurity concepts that will make you a more valuable developer.</p>
+                            <div class="blog-tags">
+                                <span class="tag">Security</span>
+                                <span class="tag">Best Practices</span>
+                                <span class="tag">Skills</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Cloud Computing</span>
+                                <span class="blog-date">December 2024</span>
+                            </div>
+                            <h3 class="blog-card-title">AWS, Azure, or Google Cloud: Which Cloud Platform to Learn?</h3>
+                            <p class="blog-excerpt">Cloud computing skills are in high demand. Compare the major cloud providers and find the best starting point for your career.</p>
+                            <div class="blog-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">Azure</span>
+                                <span class="tag">Google Cloud</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="newsletter-section">
+                    <div class="newsletter-content">
+                        <h2>Stay Updated</h2>
+                        <p>Get the latest coding news and job market insights delivered to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CodeGuide. Helping developers choose the right tools.</p>
+        </div>
+    </footer>
+</body>
+</html> 

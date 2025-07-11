@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGuide - Choose Your Programming Language</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-code"></i>
+                CodeGuide
+            </h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#project-selection" class="nav-link dropdown-toggle">
+                            Project Types
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#project-selection" class="dropdown-item">All Projects</a></li>
+                            <li><a href="frontend.html" class="dropdown-item">Front-End Development</a></li>
+                            <li><a href="backend.html" class="dropdown-item">Back-End Development</a></li>
+                            <li><a href="mobile.html" class="dropdown-item">Mobile Development</a></li>
+                            <li><a href="game.html" class="dropdown-item">Game Development</a></li>
+                            <li><a href="data.html" class="dropdown-item">Data Science</a></li>
+                            <li><a href="ai.html" class="dropdown-item">AI & Machine Learning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Whether you're building a game, a mobile app, or a website, we’ll guide you to the right tech</h1>
+                        <a href="#project-selection" class="hero-btn">Explore project types</a>
+                    </div>
+                    <div class="hero-media">
+                        <img src="hero2.png" width="220" height="220" alt="Programming Language">
+                    </div>
+                </div>
+            </section>
+            <!-- Project Type Selection -->
+            <section id="project-selection" class="project-selection">
+                <h2>What type of project are you building?</h2>
+                <div class="project-grid" id="project-grid">
+                    <a class="project-card" href="frontend.html">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Front-End Development</h3>
+                        <p>Build user interfaces and interactive web experiences</p>
+                    </a>
+                    <!-- Other project types will be added similarly -->
+                </div>
+            </section>
+            <!-- Language Recommendations -->
+            <section id="recommendations" class="recommendations hidden">
+                <div class="recommendations-header">
+                    <button id="back-btn" class="back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Project Types
+                    </button>
+                    <h2 id="recommendation-title">Language Recommendations</h2>
+                </div>
+                <div class="languages-grid" id="languages-grid">
+                    <!-- Language recommendations will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CodeGuide. Helping developers choose the right tools.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
